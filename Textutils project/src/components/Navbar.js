@@ -1,21 +1,22 @@
 import React from 'react'
 import PropTypes from "prop-types"
+import { Link } from 'react-router-dom'
 
 export default function Navbar({ title, about, mode, changeMode }) {
   return (
     <nav className={`navbar navbar-expand-lg bg-${mode.color === "dark" ? "dark" : "light"}`}>
       <div className="container-fluid">
-        <a className="navbar-brand" href="/" style={{ color: mode.color === "dark" ? "white" : "black" }}>{title}</a>
+        <Link className="navbar-brand" href="/" style={{ color: mode.color === "dark" ? "white" : "black" }}>{title}</Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link active" href="/" style={{ color: mode.color === "dark" ? "white" : "black" }}>Home</a>
+              <Link className="nav-link active" to="/" style={{ color: mode.color === "dark" ? "white" : "black" }}>Home</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/" style={{ color: mode.color === "dark" ? "white" : "black" }}>{about}</a>
+              <Link className="nav-link" href="/" style={{ color: mode.color === "dark" ? "white" : "black" }}>{about}</Link>
             </li>
           </ul>
         </div>

@@ -11,22 +11,26 @@ export default function Textform(props) {
     }
     const upperCase =()=>{
         let upperValue = text.toUpperCase();
-        setText(upperValue)
+        setText(upperValue);
+        props.showalert("Convert to uperrcase ","success")
     }
 
     const lowerCase =()=>{
         let lowerValue = text.toLowerCase();
-        setText(lowerValue)
+        setText(lowerValue);
+        props.showalert("Convert to Lowercase ","success")
     }
     
 
     const clearCase = ()=>{
-        setText("")
+        setText("");
+        props.showalert("clear text box","success");
     }
 
 
      const BackCase  = ()=>{
-         setText("Enter Text Here .Thank You so Much")
+         setText("Enter Text Here .Thank You so Much");
+         props.showalert("Text back ","success")
      }
   return (
 <>
