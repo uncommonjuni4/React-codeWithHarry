@@ -1,0 +1,15 @@
+My first React js Project Done.
+
+Which i Learn In it:
+
+1)  i learn how react project step up
+
+2)  i learn how react compents work
+
+3)  how react props work 
+
+4)  how react hooks use to mange state 
+
+5) how make styling in react
+
+6) how write own logic
