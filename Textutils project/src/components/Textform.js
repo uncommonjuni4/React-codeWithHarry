@@ -68,7 +68,7 @@ style={{backgroundColor:props.mode.color==="light"?"dark" :"white"}}
   <div className="container my-4" >
      <h1>Your Text Summary</h1>
      <p> {text.split(" ").length} word and  {text.length} Character</p>
-     <p> { 0.008 * text.split(" ").length} Mintus To Read Wordsr</p>
+     <p> { 0.008 * text.split(" ").filter((element)=>{ return element.length !== 0 }).length} Mintus To Read Wordsr</p>
      <h2>Periview</h2>
      <h5>{text}</h5>
 </div>
